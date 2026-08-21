@@ -8,31 +8,41 @@
 
     <style>
         form {
-            width: 380px;
-            height: 230px;
-            border: 3px solid rgb(128, 128, 128);
-            padding: 20px 10px;
+            width: 680px;
+            height: 410px;
+            border: 3px solid gray;
+            padding: 30px 20px;
+
+            /* Agar muncul scrollbar seperti gambar */
+            overflow: scroll;
         }
 
         label {
             display: inline-block;
-            width: 60px;
-            margin-bottom: 10px;
+            width: 110px;
+            margin-bottom: 12px;
+            font-size: 20px;
+            font-family: serif;
         }
 
         input {
-            width: 240px;
-            height: 18px;
+            width: 450px;
+            height: 28px;
+            font-size: 18px;
+            box-sizing: border-box;
         }
 
         textarea {
-            width: 205px;
-            height: 75px;
+            width: 370px;
+            height: 140px;
             vertical-align: top;
+            font-size: 18px;
+            font-family: monospace;
+            resize: none;
         }
 
         .postcode {
-            width: 140px;
+            width: 270px;
         }
     </style>
 </head>
@@ -50,11 +60,7 @@
         <br>
 
         <label>Address:</label>
-        <textarea>
-            25 Nowhere Street
-Somewhere
-Not Here
-Y2K SRU</textarea>
+        <textarea type="address" placeholder="your address here" ></textarea>
         <br>
 
         <label>Postcode:</label>
