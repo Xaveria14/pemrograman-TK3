@@ -51,25 +51,27 @@
 
             <ul class="navbar-nav">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#services">Services</a>
+    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#education">Pendidikan</a>
-                </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#education">Pendidikan</a>
+    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+    </li>
+
+</ul>
 
             </ul>
 
@@ -203,10 +205,11 @@
 
     <div class="container">
 
-        <!-- JUDUL -->
         <div class="about-header text-center">
 
-            <span class="about-label">✦ GET TO KNOW ME ✦</span>
+            <span class="about-label">
+                ✦ GET TO KNOW ME ✦
+            </span>
 
             <h2 class="section-title">
                 About <span>Me</span>
@@ -222,7 +225,6 @@
 
         <div class="row about-content align-items-center">
 
-            <!-- TENTANG SAYA -->
             <div class="col-md-6">
 
                 <div class="about-card">
@@ -252,7 +254,6 @@
             </div>
 
 
-            <!-- PERFORMANCE -->
             <div class="col-md-6">
 
                 <div class="performance-box">
@@ -270,14 +271,20 @@
 
                     </div>
 
+                    <div id="skill-container"></div>
 
-                   <div id="skill-container"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
 <!-- ================= RIWAYAT PENDIDIKAN ================= -->
-<section id="education" class="projects-section">
-
+<section id="education" class="education-section">
     <div class="container">
 
         <div class="text-center">
@@ -486,42 +493,54 @@
 
         </div>
 
-
+</section>
         <!-- ================= FORM DI KANAN ================= -->
-        <form class="contact-form">
+       <form class="contact-form">
 
-            <div class="form-group">
-                <input type="text" placeholder="♙   Nama Lengkap">
-            </div>
+    <div class="form-row">
 
-            <div class="form-group">
-                <input type="email" placeholder="✉   Email">
-            </div>
+        <input 
+            type="text" 
+            name="nama"
+            placeholder="Nama"
+            required
+        >
 
-            <div class="form-group">
-                <textarea placeholder="✎   Tulis pesan Anda..."></textarea>
-            </div>
-
-            <button type="submit" class="contact-btn">
-                ➤ &nbsp; Kirim Pesan
-            </button>
-
-        </form>
+        <input 
+            type="email" 
+            name="email"
+            placeholder="Email"
+            required
+        >
 
     </div>
 
+    <textarea 
+        name="pesan"
+        placeholder="Tulis pesan Anda"
+        required>
+    </textarea>
+
+    <button type="submit">
+        Kirim
+    </button>
+
+</form>
+
+</div>
+
+</section>
 
 
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
 
-    <!-- ================= FOOTER ================= -->
-    <footer class="footer">
+    <p>
+        © 2026 Xaveria Portfolio.
+        All Rights Reserved.
+    </p>
 
-        <p>
-            © 2026 Xaveria Portfolio.
-            All Rights Reserved.
-        </p>
-
-    </footer>
+</footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

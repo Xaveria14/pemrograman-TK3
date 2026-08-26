@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id"> <!--halaman menggunakan bahasa Indonesia-->
+<head>
+    <meta charset="UTF-8">
+<!--kumpulan karakter itu charset-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- digunakan untuk tampilan sesuai dengan layar -->
+
+        <title>Kalkulator Sederhana</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Meminta angka pertama
+        let angka1 = prompt("Masukkan angka 1:");
+
+        // Meminta angka kedua
+        let angka2 = prompt("Masukkan angka 2:");
+
+        // Meminta operator
+        let operator = prompt("Masukkan operator (+, -, *, /):");
+
+        // Mengubah input menjadi angka
+        angka1 = Number(angka1);
+        angka2 = Number(angka2);
+
+        // Variabel hasil
+        let hasil;
+
+        // Menentukan operasi
+        if (operator == "+") {
+            hasil = angka1 + angka2;
+
+        } else if (operator == "-") {
+            hasil = angka1 - angka2;
+
+        } else if (operator == "*") {
+            hasil = angka1 * angka2;
+
+        } else if (operator == "/") {
+
+            if (angka2 == 0) {
+                alert("Tidak bisa dibagi dengan 0!");
+            } else {
+                hasil = angka1 / angka2;
+            }
+
+        } else {
+            alert("Operator tidak valid!");
+        }
+
+        // Menampilkan hasil
+        if (hasil !== undefined) {
+            alert(
+                "Hasil: " + angka1 + " " + operator + " " + angka2 + " = " + hasil
+            );
+        }
+
+    </script>
+
+</body>
+
+</html>
