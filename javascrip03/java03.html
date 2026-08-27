@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Latihan JavaScript 03</title>
+</head>
+
+<body>
+
+    <h1>Second Stopwatch</h1>
+
+    <!-- Tampilan detik -->
+    <h2 id="waktu">0</h2>
+
+    <!-- Tombol -->
+    <button onclick="mulai()">Start</button>
+    <button onclick="berhenti()">Stop</button>
+    <button onclick="reset()">Reset</button>
+
+
+    <script>
+
+        // Variabel untuk menyimpan jumlah detik
+        let detik = 0;
+
+        // Variabel untuk menyimpan interval
+        let interval;
+
+
+        // Fungsi Start
+        function mulai() {
+
+            // Mencegah stopwatch berjalan lebih dari satu kali
+            if (interval) {
+                return;
+            }
+
+            interval = setInterval(function () {
+
+                // Menambah 1 setiap detik
+                detik++;
+
+                // Menampilkan angka
+                document.getElementById("waktu").textContent = detik;
+
+            }, 1000);
+
+        }
+
+
+        // Fungsi Stop
+        function berhenti() {
+
+            // Menghentikan stopwatch
+            clearInterval(interval);
+
+            // Mengosongkan interval
+            interval = null;
+
+        }
+
+
+        // Fungsi Reset
+        function reset() {
+
+            // Menghentikan stopwatch
+            clearInterval(interval);
+
+            // Mengembalikan nilai menjadi 0
+            detik = 0;
+
+            // Menampilkan kembali angka 0
+            document.getElementById("waktu").textContent = detik;
+
+            // Mengosongkan interval
+            interval = null;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
